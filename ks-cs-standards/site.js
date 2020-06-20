@@ -7,10 +7,36 @@
 
 /*I should have used a table hindsight 20/20 */
 
+//the url:
+var stand = "https://modem-barbara.codio.io/ks-cs-standards/standards.json";
+
+//waits until the form is loaded to run the js: 
 window.addEventListener('load', (event) => {
-  var list = standards;
-  list.forEach(disp);
+  //The following three methodes are hevily taken from this video that explains the basics of fetch:
+  //https://www.youtube.com/watch?v=g6-ZwZmRncs&feature=emb_title
+  fetch(stand)
+    .then(checkStatus)
+    .then(getJSON)
+    .then(function(data){
+          data.forEach(disp);
+          })
+    .catch(function(err){
+            //I would like to set this up to redirect to an error page
+           });
 });
+
+function checkStatus(response){
+  if (response.status === 200){
+    return Promise.resolve(response);
+  } else{
+      return Promise.reject(
+      new Error (response.statusText));
+  }
+}
+
+function getJSON(response) {
+  return response.json();
+}
 
 function disp(item, count)
 {
