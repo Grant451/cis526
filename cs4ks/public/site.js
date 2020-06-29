@@ -8,7 +8,7 @@
 /*I should have used a table hindsight 20/20 */
 
 //the url:
-var stand = "https://modem-barbara.codio.io/ks-cs-standards/standards.json";
+var stand = "https://velvet-taboo-3000.codio.io/standards.json";
 
 //waits until the form is loaded to run the js: 
 window.addEventListener('load', (event) => {
@@ -21,9 +21,10 @@ window.addEventListener('load', (event) => {
           data.forEach(disp);
           })
     .catch(function(err){
-            //I would like to set this up to redirect to an error page
            });
 });
+
+
 
 function checkStatus(response){
   if (response.status === 200){
