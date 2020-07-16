@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Grant451/cis526/issues"
   },
-  "homepage": "https://github.com/Grant451/cis526#readme"
+  "homepage": "https://github.com/Grant451/cis526#readme",
+  "dependencies": {
+    "ejs": "^3.1.3"
+  }
 }

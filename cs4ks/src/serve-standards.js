@@ -5,14 +5,19 @@ const fs = require('fs');
 const path = require('path');
 const pathToMimeType = require('./path-to-mime-type');
 
-function serveFile(req, res) {
+function serveStandards(req, res) {
   var pathname = new URL(req.url, 'http://localhost').pathname;
+  //console.log(pathname);
   var filePath = path.join('/home/codio/workspace/cis526/cs4ks/public/', pathname);
-  
+  //console.log("before,pathname:",pathname);
   //url corrector:
   if(pathname == "/"){
     filePath ="/home/codio/workspace/cis526/cs4ks/public/index.html";
   };
+  if(pathname == "/standards"){
+    filePath ="/home/codio/workspace/cis526/cs4ks/public/standards.html";
+  };
+  //console.log("after,filepath:",filePath);
   
   fs.readFile(filePath, function(err, body){
   if(err) {
@@ -30,4 +35,4 @@ function serveFile(req, res) {
   })
   
 }
-module.exports = serveFile;
+module.exports = serveStandards;

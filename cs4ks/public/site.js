@@ -8,7 +8,7 @@
 /*I should have used a table hindsight 20/20 */
 
 //the url:
-var stand = "https://velvet-taboo-3000.codio.io/standards.json";
+var stand = "https://virus-remark-3000.codio.io/standards.json";
 
 //waits until the form is loaded to run the js: 
 window.addEventListener('load', (event) => {

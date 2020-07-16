@@ -4,6 +4,7 @@ const path = require('path');
 
 function pathToMimeType(filePath) {
   var extension = path.extname(filePath);
+  //console.log(filePath);
     switch(extension) {
     case ".html": 
       return "text/html";
@@ -11,14 +12,10 @@ function pathToMimeType(filePath) {
       return "text/css";
     case ".js":
       return "text/javascript";
-        
-        
-    //is this necessary?:
-        
     case ".json":
       return "text/javascript";
-        
-        
+    case ".ejs":
+      return "text/html";
     default:
       return "application/octet-stream";
   }
