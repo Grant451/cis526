@@ -8,7 +8,14 @@
 /*I should have used a table hindsight 20/20 */
 
 //the url:
-var stand = "https://virus-remark-3000.codio.io/standards.json";
+//from git: 
+//var stand = "https://virus-remark-3000.codio.io/standards.json";
+//was: var stand = "https://jump-pigment.codio.io/standards.json";
+//var stand = "https://jump-pigment.codio.io/standards.json";
+//cis526/cs4ks/public/standards.html
+//var stand = "https://jump-pigment.codio.io/test.html";//this does not affect the serving of the .json
+
+var stand = "https://jump-pigment-3000.codio.io/standards.json";
 
 //waits until the form is loaded to run the js: 
 window.addEventListener('load', (event) => {

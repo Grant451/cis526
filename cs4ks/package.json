@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Grant451/cis526#readme",
   "dependencies": {
+    "better-sqlite3": "^7.1.0",
     "ejs": "^3.1.3"
   }
 }

@@ -12,7 +12,7 @@ function serveStandards(req, res) {
   //console.log("before,pathname:",pathname);
   //url corrector:
   if(pathname == "/"){
-    filePath ="/home/codio/workspace/cis526/cs4ks/public/index.html";
+    filePath ="/home/codio/workspace/cis526/cs4ks/public/index.html";//was index.html";
   };
   if(pathname == "/standards"){
     filePath ="/home/codio/workspace/cis526/cs4ks/public/standards.html";
