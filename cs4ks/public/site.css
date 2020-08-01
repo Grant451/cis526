@@ -22,6 +22,9 @@ HTML{
   display: none;
 }
 
+input {
+  margin: 1%;
+}
 
 /* this rule is modified from the lab: */
 @media (max-width: 550px) {
