@@ -1,5 +1,5 @@
 //this code is heavily taken from the node file server lab
-/*
+
 const serveFile = require('./serve-standards');
 const listDirectory = require('./list-dir.js');
 
@@ -8,4 +8,3 @@ function handleRequest(req, res) {
   serveFile(req, res);
 }
 module.exports = handleRequest;
-*/

@@ -8,14 +8,14 @@ const pathToMimeType = require('./path-to-mime-type');
 function serveStandards(req, res) {
   var pathname = new URL(req.url, 'http://localhost').pathname;
   //console.log(pathname);
-  var filePath = path.join('/home/codio/workspace/cis526/cs4ks/public/', pathname);
+  var filePath = path.join('/home/codio/workspace/cs4ks/public/', pathname);
   //console.log("before,pathname:",pathname);
   //url corrector:
   if(pathname == "/"){
-    filePath ="/home/codio/workspace/cis526/cs4ks/public/index.html";//was index.html";
+    filePath ="/home/codio/workspace/cs4ks/public/index.html";//was index.html";
   };
   if(pathname == "/standards"){
-    filePath ="/home/codio/workspace/cis526/cs4ks/public/standards.html";
+    filePath ="/home/codio/workspace/cs4ks/public/standards.html";
   };
   //console.log("after,filepath:",filePath);
   
